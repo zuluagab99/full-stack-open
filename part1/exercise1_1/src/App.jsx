@@ -15,7 +15,7 @@ const App = () => {
   return (
     <>
       <Header course={course}/>
-      <Content part1={part1} part2={part2} part3={part3} exercise1={exercise1} exercise2={exercise2} exercise3={exercise3}/>
+      <Content args={{ part1, exercise1, part2, exercise2, part3 , exercise3 }}/>
       <Total args={[exercise1, exercise2, exercise3]}/>
     </>
   )

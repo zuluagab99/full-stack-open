@@ -1,8 +1,8 @@
-const Total = (...args) => {
-    console.log(args)
+const Total = ({...props}) => {
+    
     return (
         <>
-            <p>{args.reduce((a,b)=>{ a + b},0)}</p>
+            <p> Number of exercises { props.args.reduce((accumulator, currentValue)=> accumulator + currentValue, 0)}</p>
         </>
     )
 }
